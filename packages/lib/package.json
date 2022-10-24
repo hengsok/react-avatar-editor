@@ -1,5 +1,5 @@
 {
-  "name": "react-avatar-editor",
+  "name": "@edstash/react-avatar-editor",
   "version": "14.0.0-beta.2",
   "description": "Avatar / profile picture component. Resize and crop your uploaded image using a intuitive user interface.",
   "main": "dist/index.js",
@@ -9,15 +9,13 @@
   "scripts": {
     "build": "tsup",
     "clean": "rm -rf dist",
-    "test": "playwright test",
-    "prepublishOnly": "pnpm -w lint && pnpm test && pnpm build",
+    "prepublishOnly": "pnpm -w lint && pnpm build",
     "postversion": "git push --tags origin HEAD"
   },
   "files": [
     "dist",
     "src"
   ],
-  "dependencies": {},
   "peerDependencies": {
     "react": "^0.14.0 || ^16.0.0 || ^17.0.0 || ^18.0.0",
     "react-dom": "^0.14.0 || ^16.0.0 || ^17.0.0 || ^18.0.0"
@@ -39,14 +37,11 @@
     "profile",
     "image"
   ],
-  "author": {
-    "name": "Moritz Schwoerer",
-    "email": "mr.mosch@gmail.com"
-  },
+  "author": "Moritz Schwoerer <mr.mosch@gmail.com>",
   "contributors": [
-    {
-      "name": "Daniel Lehr",
-      "email": "daniellehr@gmx.de"
-    }
-  ]
+    "Daniel Lehr <daniellehr@gmx.de>"
+  ],
+  "directories": {
+    "test": "tests"
+  }
 }
